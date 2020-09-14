@@ -1,13 +1,13 @@
-import styled from 'styled-components'
-import { shade } from 'polished'
+import styled from 'styled-components';
+import { shade } from 'polished';
 
- export const Title = styled.h1`
+export const Title = styled.h1`
   font-size: 48px;
-  color:#3a3a3a;
+  color: #3a3a3a;
   max-width: 450px;
   line-height: 56px;
 
-  margin-top: 80px
+  margin-top: 80px;
 `;
 
 export const Form = styled.form`
@@ -31,12 +31,12 @@ export const Form = styled.form`
   button {
     width: 210px;
     height: 70px;
-    background: #04D361;
+    background: #04d361;
     border-radius: 0px 5px 5px 0px;
     border: 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: bold;
-    transition: background-color 0.2s ;
+    transition: background-color 0.2s;
 
     &:hover {
       background: ${shade(0.2, '#04D361')};
@@ -45,12 +45,11 @@ export const Form = styled.form`
 `;
 
 export const Repositories = styled.div`
-
   margin-top: 80px;
   max-width: 700px;
 
   a {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
     width: 100%;
     padding: 24px;
@@ -62,7 +61,7 @@ export const Repositories = styled.div`
     transition: transform 0.2s;
 
     &:hover {
-      transform: translateX(10px)
+      transform: translateX(10px);
     }
 
     & + a {
@@ -76,7 +75,8 @@ export const Repositories = styled.div`
     }
 
     div {
-      margin-left: 16px;
+      margin: 0 16px;
+      flex: 1;
 
       strong {
         font-size: 20px;
@@ -94,6 +94,5 @@ export const Repositories = styled.div`
       margin-left: auto;
       color: #cbcbd6;
     }
-
   }
 `;
